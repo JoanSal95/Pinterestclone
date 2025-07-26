@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basenamne="Pinterestclone">
+  <BrowserRouter basenamne="/Pinterestclone">
     <App />
   </BrowserRouter>
 );
