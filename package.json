@@ -2,7 +2,7 @@
   "name": "pinterestclone",
   "private": true,
   "version": "0.0.0",
-  "homepages": "joansal95.github.io/pinterestclone/",
+  "homepage": "joansal95.github.io/Pinterestclone/",
   "type": "module",
   "scripts": {
     "dev": "vite",
