@@ -9,7 +9,7 @@ function App() {
     <>
     <Header/>
        <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Pinterestclone" element={<Home />} />
         <Route path="/CreatePin" element={<CreatePin />} />
       </Routes>
     </>
