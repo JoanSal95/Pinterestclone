@@ -1,0 +1,130 @@
+.create-pin {
+    margin-left: 90px;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.conteiner-form {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.upload-box {
+  flex: 1 1 300px;
+  min-width: 280px;
+  max-width: 400px;
+  border: 2px dashed #ddd;
+  border-radius: 16px;
+  text-align: center;
+  padding: 40px 20px;
+  cursor: pointer;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-box:hover {
+  border-color: #e60023;
+}
+
+.upload-icon {
+  color: #e60023;
+  margin-bottom: 10px;
+}
+
+.pin-form {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 280px;
+}
+
+.pin-form input[type="text"],
+.pin-form input[type="url"],
+.pin-form textarea,
+.pin-form select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.pin-form input:focus,
+.pin-form textarea:focus,
+.pin-form select:focus {
+  border-color: #e60023;
+}
+
+.pin-form button {
+  padding: 12px;
+  background-color: #e60023;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pin-form button:hover {
+  background-color: #b8001b;
+}
+
+@media (max-width: 800px) {
+    .create-pin {
+        margin-left: 70px;
+        
+    }
+  .conteiner-form {
+    
+    align-items: center;
+    gap: 30px;
+  }
+
+  .upload-box,
+  .pin-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+
+    .create-pin {
+        margin-left:auto;
+        margin-right: auto;
+
+    }
+
+  .pin-form {
+    gap: 16px;
+  }
+
+  .upload-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .pin-form input,
+  .pin-form textarea,
+  .pin-form select,
+  .pin-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .upload-box small {
+    font-size: 12px;
+  }
+}

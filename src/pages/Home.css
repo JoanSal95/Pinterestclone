@@ -1,0 +1,92 @@
+section.home {
+    margin-left: 100px;
+    margin-right: 20px;
+    transition: margin-left 0.3s;
+}
+
+section.home .home-gallery {
+    columns: 5 250px;
+    column-gap: 24px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+section.home .home-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section.home .home-form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+section.home .home-form input[type="text"] {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+    width: 220px;
+    background: #fafafa;
+}
+
+section.home .home-form input[type="text"]:focus {
+    border-color: #e60023;
+}
+
+section.home .home-form button {
+    padding: 10px 20px;
+    background: #e60023;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+section.home .home-form button:hover {
+    background: #b8001b;
+}
+
+@media (max-width: 1200px) {
+    section.home .home-gallery {
+        columns: 5 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    section.home{
+        margin-left: 80px;
+    }
+    section.home .home-gallery {
+        columns: 4 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    section.home {
+        margin-left: 20px;
+    }
+
+    section.home .home-form {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    section.home .home-form input[type="text"],
+    section.home .home-form button {
+        width: 75%;
+    }
+}
+
